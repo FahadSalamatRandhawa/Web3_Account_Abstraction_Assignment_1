@@ -10,7 +10,7 @@ export default function Home() {
   
 
   return (
-    <div className=' h-screen block bg-teal-950/90'>
+    <div className=' h-screen '>
       <Header/>
       <Body/>
       <Footer/>
