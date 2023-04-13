@@ -47,12 +47,12 @@ export default function Body(){
 
     return (
         <>
-            <div className=" h-[400px] w-full p-5 gap-2 flex justify-around ">
+            <div className=" sm:h-auto md:h-[400px] w-full p-5 gap-2 items-center flex flex-col md:flex md:flex-row md:justify-around ">
                 {
                     TaskList.map((task)=>{
                         return(
                             <>
-                                <div className=" h-full w-2/5 p-2 gap-y-2 flex flex-col items-center text-white/80 rounded-md bg-gray-800/70 shadow-gray-300/30 shadow-lg ">
+                                <div className=" h-full w-auto lg:w-2/5 p-2 gap-y-2 flex flex-col items-center text-white/80 rounded-md bg-gray-800/70 shadow-gray-300/30 shadow-lg ">
                                     <div className=" mb-3 font-semibold">{task.Task}</div>
                                     {
                                         task.Transactions.map((t)=>
